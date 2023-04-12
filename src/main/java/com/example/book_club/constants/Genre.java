@@ -1,0 +1,7 @@
+package com.example.book_club.constants;
+
+public enum Genre {
+    
+    NONFICTION, REFERENCE, HISTORY, FANTASY, MYSTERY, SCIENCE_FICTION, HORROR, HISTORICAL_FICTION, ROMANCE, TRUE_CRIME, SCIENCE_AND_TECHNOLOGY
+    
+}

@@ -1,0 +1,16 @@
+Billy Bob,:: Amazing Mines of the American West,:: 1997
+Jim Bob,:: Country Cooking with Jim Bob,:: 2014
+Jebadiah "No Teeth" Jones,:: Catfish Noodling in the Ozarks,:: 1998
+Jethro McGimpy,:: Modern Information Security Solutions for Back Country Rednecks,:: 2018
+Jethro McGimpy,:: Redneck Solutions for Cloud Migration,:: 2016
+Jethro McGimpy,:: The Datacenters Have Eyes: Navigating the International Legal Requirements for Local User Information Storage,:: 2022
+Jethro McGimpy,:: A Hillbilly Sysadmin's Guide to Meeting City Slicker Sarbanes-Oxley Compliance Needs,:: 2015
+Jethro McGimpy,:: There's No Minimum Number of Teeth to be a Site Reliability Engineer,:: 2021
+Billy Bob,:: Black Damp Dangers and Other Lessons Learned from Twenty Years of Managing Coal Mines in the Appalacians,:: 1992
+Crabby McClams,:: Back Country Bedtime Stories,:: 2003
+Cletus Monro,:: Financials Leave No Footprints: A Practical Guide to Forensic Accounting,:: 2016
+Bubba Beauregard Jackson,:: Applied Genetics for Maintaining and Improving Livestock Health,:: 1993
+Elmer Dale,:: An Introduction to Music Theory for the Banjo Picker,:: 2008
+Bubba Beauregard Jackson,:: A Tale of Two Toes Too Many,:: 1973
+Ezekiel Dimwit Holt,:: Jethro McGimpy, a Hillbilly Legend in Information Security,:: 2023
+An Author,:: A Title,:: 1987
