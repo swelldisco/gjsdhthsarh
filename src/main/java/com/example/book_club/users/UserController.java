@@ -33,7 +33,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @Operation(summary = "Retrieves a user", description = "Retrieves a user based on ID")
+    @Operation(summary = "Retrieves a user", description = "Retrieves a user based on ID.")
     @ApiResponse(responseCode = "200", description = "Successful retrieval of a user.", content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))))
     @GetMapping("/{id}")
     public ResponseEntity<User> getUser(@PathVariable int id) {
@@ -62,18 +62,22 @@ public class UserController {
     }
 
     @Operation(summary = "Deletes a user.", description = "Deletes a user based on ID.")
-    @ApiResponse(responseCode = "204", description = "Successful deletion of a user", content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))))
+    @ApiResponse(responseCode = "204", description = "Successful deletion of a user.", content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))))
     @DeleteMapping("/{id}")
     public ResponseEntity<HttpStatus> deleteUser(@PathVariable int id) {
         userService.deleteUser(id);
         return new ResponseEntity<HttpStatus>(HttpStatus.NO_CONTENT);
     }
 
+    @Operation(summary = "Adds a book to a user's libray.", description = "Using user and book ID, this adds a book object already in the repository to a user's person library set, and returns the updated set.")
+    @ApiResponse(responseCode = "200", description = "Successfully added a book to a user's library.", content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))))
     @PutMapping("/{userId}/addBook/{bookId}")
     public ResponseEntity<Set<Book>> addBookToLibrary(@PathVariable int userId, @PathVariable int bookId) {
         return new ResponseEntity<>(userService.addBookToLibray(userId, bookId), HttpStatus.OK);
     }
 
+    @Operation(summary = "Removes a book from a user's library.", description = "Using user and book ID, checks a user's library set to see if the book is in it.  If it is, it removes the book and returns the updated set.")
+    @ApiResponse(responseCode = "200", description = "Successful removal of a book from a user's library.", content = @Content(array = @ArraySchema(schema = @Schema(implementation = User.class))))
     @PutMapping("/{userId}/removeBook/{bookId}")
     public ResponseEntity<Set<Book>> removeBookFromLibrary(@PathVariable int userId, @PathVariable int bookId) {
         return new ResponseEntity<>(userService.removeBookFromLibrary(userId, bookId), HttpStatus.OK);
